@@ -1,0 +1,160 @@
+[
+  {
+    "k_string": "hoge",
+    "k_int": 10,
+    "k_float": 1.234,
+    "k_bool": true,
+    "k_array": [
+      1, 2, 3, 4
+    ],
+    "k_dict": {
+      "k_string": "hoge",
+      "k_int": 10,
+      "k_float": 1.234,
+      "k_bool": true,
+      "k_array": [
+        1, 2, 3, 4
+      ]
+    },
+    "k_mixed_array": [
+      1, "string", 1.234, true, {"k_dict": {"k_string": "hoge"}}
+    ],
+    "k_mixed_nested_array": [
+      1, "string", 1.234, true, [
+        1, "string", {
+          "k_string": "hoge",
+          "k_int": 10,
+          "k_dict": {
+            "k_dict": {
+              "k_string": "hoge",
+              "k_int": 10
+            }
+          }
+        }
+      ]
+    ]
+  },
+  {
+    "k_string": "hoge",
+    "k_int": 10,
+    "k_float": 1.234,
+    "k_bool": true,
+    "k_array": [
+      1, 2, 3, 4
+    ],
+    "k_dict": {
+      "k_string": "hoge",
+      "k_int": 10,
+      "k_float": 1.234,
+      "k_bool": true,
+      "k_array": [
+        1, 2, 3, 4
+      ]
+    },
+    "k_mixed_array": [
+      1, "string", 1.234, true, {"k_dict": {"k_string": "hoge"}}
+    ],
+    "k_mixed_nested_array": [
+      1, "string", 1.234, true, [
+        1, "string", {
+          "k_string": "hoge",
+          "k_int": 10,
+          "k_dict": {
+            "k_dict": {
+              "k_string": "hoge",
+              "k_int": 10,
+              "k_optional": 10
+            }
+          }
+        }
+      ]
+    ]
+  },
+  {
+    "k_string": "hoge",
+    "k_int": 10,
+    "k_float": 1.234,
+    "k_bool": true,
+    "k_array": [
+      1, 2, 3, 4
+    ],
+    "k_dict": {
+      "k_string": "hoge",
+      "k_int": 10,
+      "k_float": 1.234,
+      "k_bool": true,
+      "k_array": [
+        1, 2, 3, 4
+      ]
+    },
+    "k_mixed_array": [
+      1, "string", 1.234, true, {"k_dict": {"k_string": "hoge"}}
+    ],
+    "k_mixed_nested_array": [
+      1, "string", 1.234, true, [
+        1, "string", {
+          "k_string": "hoge",
+          "k_int": 10,
+          "k_dict": {
+            "k_dict": {
+              "k_string": "hoge",
+              "k_int": 10,
+              "k_optional": 10
+            }
+          }
+        }
+      ]
+    ],
+    "k_optional": {
+      "k_string": "hoge",
+      "k_int": 10,
+      "k_optional_nested": {
+        "k_string": "hoge"
+      }
+    }
+  },
+  {
+    "k_string": "hoge",
+    "k_int": 10,
+    "k_float": 1.234,
+    "k_bool": true,
+    "k_array": [
+      1, 2, 3, 4
+    ],
+    "k_dict": {
+      "k_string": "hoge",
+      "k_int": 10,
+      "k_float": 1.234,
+      "k_bool": true,
+      "k_array": [
+        1, 2, 3, 4
+      ]
+    },
+    "k_mixed_array": [
+      1, "string", 1.234, true, {"k_dict": {"k_string": "hoge"}}
+    ],
+    "k_mixed_nested_array": [
+      1, "string", 1.234, true, [
+        1, "string", {
+          "k_string": "hoge",
+          "k_int": 10,
+          "k_dict": {
+            "k_dict": {
+              "k_string": "hoge",
+              "k_int": 10,
+              "k_optional": 10
+            }
+          }
+        }
+      ]
+    ],
+    "k_optional": {
+      "k_string": "hoge",
+      "k_int": 10,
+      "k_optional_nested": {
+        "k_string": "hoge",
+        "k_optional": 10
+      }
+    }
+  }
+]

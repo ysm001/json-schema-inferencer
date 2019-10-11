@@ -1,0 +1,26 @@
+[
+  {
+    "k_string": "string",
+    "k_array": [
+      {
+        "k_string": "string",
+        "k_number": 10
+      },
+      {
+        "k_string": "string"
+      }
+    ]
+  },
+  {
+    "k_string": "string",
+    "k_array": [
+      {
+        "k_string": "string",
+        "k_number": 10
+      },
+      {
+        "k_string": "string"
+      }
+    ]
+  }
+]
