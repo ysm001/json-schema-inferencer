@@ -1,0 +1,69 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+message Article {
+  repeated google.protobuf.Any details_info  = 1; // Optional
+  google.protobuf.Any headline  = 2;
+
+  message Hits {
+
+    message FeaturedImage {
+      string credit  = 1;
+      string etoki  = 2;
+      string expires_at  = 3; // Nullable
+      string format  = 4;
+      int32 height  = 5;
+      string image_id  = 6;
+      int32 revision  = 7;
+      string src_image_url  = 8;
+      int32 width  = 9;
+    }
+
+    message PatternTestInfo {
+      google.protobuf.Any default_pattern_id  = 1;
+      string pattern_id  = 2;
+      google.protobuf.Any pattern_test_id  = 3;
+      bool pattern_testing_flag  = 4;
+    }
+
+    string display_time  = 1;
+    string kiji_id_raw  = 2;
+    string rflg  = 3;
+    string service_category  = 4;
+    string title  = 5;
+    string title2  = 6;
+    string title_web  = 7;
+    FeaturedImage featured_image  = 8; // Optional
+    google.protobuf.Any featured_video  = 9; // Optional
+    bool is_tedumi  = 10; // Optional
+    string list_design_type  = 11; // Optional
+    PatternTestInfo pattern_test_info  = 12; // Optional
+  }
+
+  repeated Hits hits  = 3; // Optional
+  google.protobuf.Any image_url  = 4;
+  string label  = 5;
+  google.protobuf.Any lead  = 6;
+  string navigation_id  = 7;
+  int32 offset  = 8;
+
+  message PickupTopics {
+    bool followable  = 1;
+    google.protobuf.Any headline  = 2;
+    google.protobuf.Any image_url  = 3;
+    string label  = 4;
+    google.protobuf.Any lead  = 5;
+    google.protobuf.Any sns  = 6;
+    string topic_code  = 7;
+    string topic_type  = 8;
+    string type  = 9;
+    string uid  = 10;
+  }
+
+  repeated PickupTopics pickup_topics  = 9; // Optional
+  string stream_design_type  = 10;
+  string thema_id  = 11;
+  int32 total  = 12;
+  google.protobuf.Any uid  = 13;
+}
