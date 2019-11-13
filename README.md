@@ -5,7 +5,7 @@ This is based on [Schema Inference for Massive JSON Datasets](https://openprocee
 # Usage
 
 ```
-python ./main.py <path-to-array-of-jsons>
+python ./main.py -i <path-to-array-of-jsons> -f <protobuf or jsonschema>
 ```
 
 # Example
