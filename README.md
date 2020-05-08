@@ -1,12 +1,18 @@
-# json to jsonschema converter
+<!-- @format -->
+
+# Json Schema Inferencer
+
+This is a tool for inferencing the type from massive JSON datasets.
 
 This is based on [Schema Inference for Massive JSON Datasets](https://openproceedings.org/2017/conf/edbt/paper-62.pdf)
 
 # Usage
 
 ```
-python ./main.py -i <path-to-array-of-jsons> -f <protobuf or jsonschema>
+python ./jsi/cli.py -i <path-to-array-of-jsons>
 ```
+
+`protobuf` is experimental.
 
 # Example
 
@@ -62,11 +68,8 @@ Output
           "type": "string"
         }
       },
-      "required": [
-        "B"
-      ]
+      "required": ["B"]
     }
   }
 }
-
 ```
