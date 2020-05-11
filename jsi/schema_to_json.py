@@ -1,4 +1,4 @@
-from infer_schema import *
+from infer_schema import UT, BT, AT, RT, KV, OptKV, EmptySet, o
 
 
 def to_readable_json(t):

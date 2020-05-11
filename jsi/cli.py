@@ -1,8 +1,6 @@
 import json
-import sys
-import os
 from infer_schema import infer_schema
-from schema_to_json import to_json, to_json_schema
+from schema_to_json import to_json_schema
 import argparse
 
 
@@ -28,5 +26,5 @@ if __name__ == "__main__":
     f = open(file_name, "r")
     jsons = json.load(f)
     schema = infer_schema(jsons)
-    jsonschema = to_json(schema)
+    jsonschema = to_json_schema("schema", schema)
     print(json.dumps(jsonschema, indent=2))
