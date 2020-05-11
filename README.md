@@ -12,8 +12,6 @@ This is based on [Schema Inference for Massive JSON Datasets](https://openprocee
 python ./jsi/cli.py -i <path-to-array-of-jsons>
 ```
 
-`protobuf` is experimental.
-
 # Example
 
 Input
@@ -73,3 +71,18 @@ Output
   }
 }
 ```
+
+## Development
+
+### Install Deps
+
+```
+poetry install
+```
+
+### Run Test
+
+```
+poetry run pytest ./jsi/tests
+```
+
